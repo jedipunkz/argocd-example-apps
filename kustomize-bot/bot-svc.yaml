@@ -4,6 +4,6 @@ metadata:
   name: bot
 spec:	
   ports:
-  - ports: 8080
+  - port: 8080
   selector:	
     app: bot
