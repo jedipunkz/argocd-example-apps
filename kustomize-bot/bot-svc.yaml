@@ -3,5 +3,6 @@ kind: Service
 metadata:	
   name: bot
 spec:	
+  ports:
   selector:	
     app: bot
