@@ -16,6 +16,6 @@ spec:
       containers:
       - image: nginx
         name: bot
-  syncPoliy:
+  syncPolicy:
     automated: {}
       prune: true
