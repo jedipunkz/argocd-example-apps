@@ -7,6 +7,3 @@ spec:
   - port: 8080
   selector:	
     app: bot
-  syncPolicy:
-    automated: {}
-      prune: true
