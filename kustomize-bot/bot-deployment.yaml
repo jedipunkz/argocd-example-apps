@@ -14,5 +14,6 @@ spec:
         app: bot
     spec:
       containers:
-      - image: nginx
-        name: bot
+        - name: bot
+          imagePullPolicy: Always
+
