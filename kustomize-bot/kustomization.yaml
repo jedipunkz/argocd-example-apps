@@ -8,3 +8,5 @@ kind: Kustomization
 images:
 - name: nginx
   newName: redis
+- name: redis
+  newName: nginx
