@@ -15,5 +15,6 @@ spec:
     spec:
       containers:
         - name: bot
+          image: nginx:1.19-alpine
           imagePullPolicy: Always
 
