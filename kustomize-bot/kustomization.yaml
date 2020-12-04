@@ -5,3 +5,7 @@ resources:
 - bot-svc.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+images:
+- name: nginx
+  newName: nginx
+  newTag: 1.19.5-alpine
