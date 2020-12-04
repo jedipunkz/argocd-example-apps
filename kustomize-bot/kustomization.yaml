@@ -6,7 +6,4 @@ resources:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- name: nginx
-  newName: redis
-- name: redis
-  newName: nginx
+- name: nginx:1.19-alpine
