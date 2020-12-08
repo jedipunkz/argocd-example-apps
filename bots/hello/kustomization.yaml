@@ -5,9 +5,3 @@ resources:
 - bot-svc.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-images:
-- name: ./bots/hello/
-  newName: /infra-bot-sandbox/hello
-- name: hello
-  newName: 395127550274.dkr.ecr.ap-northeast-1.amazonaws.com/infra-bot-sandbox/hello
-  newTag: 5009f10
