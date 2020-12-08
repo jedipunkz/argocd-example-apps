@@ -20,6 +20,8 @@ spec:
           env:
           - name: FOO
             value: "FOO BAR!!, Jedi"
+          - name: HOME
+            value: "/data"
           volumeMounts:
             - name: persistent-storage
               mountPath: /data
