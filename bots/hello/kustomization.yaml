@@ -10,4 +10,4 @@ images:
   newName: /infra-bot-sandbox/hello
 - name: hello
   newName: /infra-bot-sandbox/hello
-  newTag: eb45edf
+  newTag: 64db3f8
