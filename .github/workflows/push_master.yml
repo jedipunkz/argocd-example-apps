@@ -39,6 +39,7 @@ jobs:
         ECR_REGISTRY: ${{ steps.login-ecr-sandbox.outputs.registry }}
       run: |
         bash .github/workflows/scripts/tag-push.sh $ECR_REGISTRY sandbox
+        echo $ECR_REGISTRY
 
     - name: Commit files
       run: |
