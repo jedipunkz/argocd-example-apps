@@ -20,6 +20,9 @@ spec:
           env:
           - name: FOO
             value: "FOO BAR!!, Jedi"
+          volumeMounts:
+            - name: persistent-storage
+              mountPath: /data
       volumes:
         - name: persistent-storage
           persistentVolumeClaim:
