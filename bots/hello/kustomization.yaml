@@ -8,3 +8,6 @@ kind: Kustomization
 images:
 - name: ./bots/hello/
   newName: /infra-bot-sandbox/hello
+- name: hello
+  newName: /infra-bot-sandbox/hello
+  newTag: eb45edf
