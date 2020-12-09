@@ -3,5 +3,9 @@ kind: ConfigMap
 metadata:
   name: example-config
 data:
-  example.property.1: hello
-  example.property.2: worldooooo
+  application.yaml: |-
+    webservice:
+      endpoint:
+        transferfund: http://www.customer-service.app/api/tf
+        getbalance: http://www.customer-service.app/api/balance
+        customerinfo: http://www.customer-service.app/api/customerinfo 
