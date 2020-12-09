@@ -10,7 +10,13 @@ spec:
           volumeMounts:
             - name: config-volume
               mountPath: /etc/config
+            - name: mysecret-volume
+              mountPath: "/etc/mysecret.yaml"
+              readOnly: true
       volumes:
         - name: config-volume
           configMap:
             name: example-config
+        - name: mysecret-volume
+          secret:
+            secretName: mysecret
