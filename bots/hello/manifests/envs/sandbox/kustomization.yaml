@@ -8,4 +8,4 @@ kind: Kustomization
 images:
 - name: 395127550274.dkr.ecr.ap-northeast-1.amazonaws.com/infra-bot-sandbox/hello
   newName: 395127550274.dkr.ecr.ap-northeast-1.amazonaws.com/infra-bot-sandbox/hello
-  newTag: 2eaedac
+  newTag: ec1915b
