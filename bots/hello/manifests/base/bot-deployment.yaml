@@ -35,7 +35,12 @@ spec:
           volumeMounts:
             - name: persistent-storage
               mountPath: /data
+            - name: config-volume
+              mountPath: /etc/config
       volumes:
         - name: persistent-storage
           persistentVolumeClaim:
             claimName: efs-claim
+        - name: config-volume
+          configMap:
+            name: example-config
