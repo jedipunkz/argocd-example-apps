@@ -12,7 +12,7 @@ for dirname in ./bots/*/ ; do
     docker tag $ECR_REPOSITORY:$IMAGE_TAG $ECR_REGISTRY/infra-bot-$ENV/$ECR_REPOSITORY:latest
     docker push $ECR_REGISTRY/infra-bot-$ENV/$ECR_REPOSITORY:latest
 
-    cd envs/$ENV
+    cd manifests/envs/$ENV
     kustomize edit set image $ECR_REGISTRY/infra-bot-$ENV/$ECR_REPOSITORY=$ECR_REGISTRY/infra-bot-$ENV/$ECR_REPOSITORY:$IMAGE_TAG
     cd ../../../..
 done
