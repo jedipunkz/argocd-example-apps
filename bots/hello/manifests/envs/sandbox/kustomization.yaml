@@ -1,9 +1,5 @@
-namePrefix: kustomize-
-
-resources:
-- bot-deployment.yaml
-- bot-svc.yaml
-- secrets.yaml
+bases:
+- ../../base
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
