@@ -18,16 +18,6 @@ spec:
           image: 395127550274.dkr.ecr.ap-northeast-1.amazonaws.com/infra-bot-sandbox/hello:819333c
           imagePullPolicy: Always
           env:
-            - name: SECRET_USERNAME
-              valueFrom:
-                secretKeyRef:
-                  name: mysecret
-                  key: username
-            - name: SECRET_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: mysecret
-                  key: password
             - name: FOO
               value: "FOO BAR!!, Jedi"
             - name: HOME
