@@ -1,6 +1,5 @@
 resources:
 - configmaps.yaml
-- secrets.yaml
 - ../../base
 patchesStrategicMerge:
 - deployment.yaml
