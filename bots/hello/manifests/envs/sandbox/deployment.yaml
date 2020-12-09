@@ -12,5 +12,5 @@ spec:
               mountPath: /etc/config
       volumes:
         - name: config-volume
-          configMaps:
+          configMap:
             name: example-config
