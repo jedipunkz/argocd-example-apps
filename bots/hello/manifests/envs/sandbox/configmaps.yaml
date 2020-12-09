@@ -2,10 +2,10 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: example-config
+type: Opaque
 data:
   application.yaml: |-
     webservice:
       endpoint:
-        transferfund: http://www.customer-service.app/api/tf
-        getbalance: http://www.customer-service.app/api/balance
-        customerinfo: http://www.customer-service.app/api/customerinfo 
+        transferfund: YWRtaW4=
+        getbalance: Zm9v
